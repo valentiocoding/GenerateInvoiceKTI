@@ -5,13 +5,13 @@ import pandas as pd
 from datetime import datetime
 from api import get_data_gsheet
 import tempfile
-import pythoncom
-from docx2pdf import convert
+# import pythoncom
+# from docx2pdf import convert
 import os
 
-# Initialize COM only if on Windows and not in Streamlit cloud
-if os.name == 'nt' and not os.environ.get('STREAMLIT_SERVER'):
-    pythoncom.CoInitialize()
+# # Initialize COM only if on Windows and not in Streamlit cloud
+# if os.name == 'nt' and not os.environ.get('STREAMLIT_SERVER'):
+#     pythoncom.CoInitialize()
 
 # Load data
 if "invoice" not in st.session_state:
