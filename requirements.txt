@@ -5,3 +5,4 @@ docxtpl
 pywin32==306; sys_platform == 'win32'
 docx2pdf
 pythoncom
+DocxTemplate
